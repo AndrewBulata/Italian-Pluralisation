@@ -37,7 +37,7 @@ Our task is to build a machine learning model that can learn these rules from a 
 
 ### Data Format
 
-The training data is stored in a text file (`italian_word_pairs.txt`) with each line containing a singular and plural pair separated by a comma, for example:
+The training data is stored in the text file `italian_word_pairs.txt` containing 500 entries, with each line containing a singular and plural pair separated by a comma, for example:
 
 ```
 bambino,bambini
