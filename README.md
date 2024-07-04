@@ -25,6 +25,7 @@ Languages such as Italian, Romanian, and others use different mechanisms to form
 - **collego - colleghi** (masc. colleague - colleagues)
 - **soluzione - soluzioni** (solution - solutions)
 
+
 Our task is to build a machine learning model that can learn these rules from a given dataset and accurately predict the plural forms of new words. This project focuses on Italian, but the methodology can be extended to other languages with similar pluralisation complexities.
 
 ### Approach
@@ -36,7 +37,7 @@ Our task is to build a machine learning model that can learn these rules from a 
 
 ### Data Format
 
-The training data is stored in the text file `italian_word_pairs.txt` containing 500 entries, with each line containing a singular and plural pair separated by a comma, for example:
+The training data is stored in a text file (`italian_word_pairs.txt`) with each line containing a singular and plural pair separated by a comma, for example:
 
 ```
 bambino,bambini
@@ -46,15 +47,9 @@ casco,caschi
 
 ### How to Use
 
-1. **Clone the Repository**: 
-   ```bash
-   git clone https://github.com/yourusername/Italian-Pluralisation.git
-   cd Italian-Pluralisation
-   ```
+1. **Prepare the Data**: Ensure you have a text file named `italian_word_pairs.txt` in the repository's root directory with your word pairs.
 
-2. **Prepare the Data**: Ensure you have a text file named `italian_word_pairs.txt` in the repository's root directory with your word pairs.
-
-3. **Run the Script**: Execute the script to train the model and test the predictions.
+2. **Run the Script**: Execute the script to train the model and test the predictions.
 
 ### Example Usage
 
@@ -133,12 +128,8 @@ for singular, plural in zip(test_words, predicted_plurals):
     print(f"{singular} - {plural}")
 ```
 
-### Final remarks
+### Conclusion
 
 This project demonstrates how machine learning can be used to tackle the complex problem of pluralisation in natural languages. By extending the methodology used for Aragonese to Italian, we aim to create a versatile model capable of handling diverse linguistic patterns. Feel free to contribute by adding more word pairs, improving the feature extraction process, or extending the model to other languages.
-
-
-
-
 
 ---
