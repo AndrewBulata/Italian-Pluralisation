@@ -120,7 +120,7 @@ word_pairs = read_word_pairs('italian_word_pairs.txt')
 model = train_pluralisation_model(word_pairs)
 
 # Testing the function with new singular nouns
-test_words = ['bambino', 'ragazzo', 'donna', 'libro', 'gatto', 'fiore', 'genitore', 'laura']
+test_words = ['schermo', 'libro', 'coccodrillo', 'macchina', 'genitore', 'pulsante', 'università', 'palloncino', 'torta', 'luna']
 predicted_plurals = [predict_plural(model, word) for word in test_words]
 
 # Print the results
@@ -128,6 +128,20 @@ for singular, plural in zip(test_words, predicted_plurals):
     print(f"{singular} - {plural}")
 ```
 
+And the output should be:
+
+```
+schermo - schermi
+libro - libri
+coccodrillo - coccodrilli
+macchina - macchine
+genitore - genitori
+pulsante - pulsanti
+università - università
+palloncino - palloncini
+torta - torte
+luna - lune
+```
 ### Conclusion
 
 This project demonstrates how machine learning can be used to tackle the complex problem of pluralisation in natural languages. By extending the methodology used for Aragonese to Italian, we aim to create a versatile model capable of handling diverse linguistic patterns. Feel free to contribute by adding more word pairs, improving the feature extraction process, or extending the model to other languages.
